@@ -1,0 +1,2 @@
+# Vertikal
+no small company
