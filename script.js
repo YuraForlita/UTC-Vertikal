@@ -42,8 +42,8 @@
 
 
   const texts = {
-  ua: ['побутової техніки', 'електроніки', 'бананів', 'може ще чогось'],
-  en: ['home appliances', 'electronics', 'bananas', 'maybe something else']
+  ua: ['побутової техніки', 'електроніки', 'бананів', 'жартую, не бананів'],
+  en: ['home appliances', 'electronics', 'bananas', 'joke, not bananas']
 };
 
 function startTyping(lang) {

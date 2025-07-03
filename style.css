@@ -159,7 +159,7 @@ span {
 }
 
 .text-animation span::before {
-  content: 'Web Developer';
+  content: 'Yura Fotlita BOSS';
   color: var(--main-color);
   animation: words 20s infinite;
 }
@@ -200,13 +200,14 @@ span {
 
   61%,
   80% {
-    content: 'може ше шось';
+    content: 'жартую, не бананів';
   }
-
+/*
   81%,
   100% {
     content: '';
   }
+*/    
 }
 
 @keyframes typing {
