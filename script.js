@@ -5,10 +5,15 @@
       "nav.about": "Про нас",
       "nav.brands": "Бренди",
       "nav.contacts": "Контакти",
-      "home.greeting": "Привіт , це UTS <span>VERTIKAL</span>",
+      "home.greeting": "Привіт , це UTС <span>VERTIKAL</span>",
       "home.subtitle.static": "Ми є дистриб'ютор",
       "home.description": "Ми займаємось дистрибуцією побутової техніки, електроніки, бананів і може ще чогось.",
-      "home.more": "Детальніше про нас"
+      "home.more": "Детальніше про нас",
+      "about.title" : "Хто ми такі?",
+      "about.text1" : "UTS VERTIKAL — це команда професіоналів...",
+      "about.text2" : "Ми прагнемо стати надійним партнером...",
+      "about.text3" : "Наші цінності — це прозорість...",
+      "about.contactBtn" : "Зв'язатися з нами"
     },
     en: {
       "nav.home": "Home",
@@ -61,3 +66,26 @@ document.addEventListener("DOMContentLoaded", () => {
   const lang = localStorage.getItem("lang") || "ua";
   startTyping(lang);
 });
+
+const counters = document.querySelectorAll('.counter');
+  const speed = 300;
+
+  counters.forEach(counter => {
+    const animate = () => {
+      const value = +counter.getAttribute('data-target');
+      const data = +counter.innerText;
+      const time = value / speed;
+      if (data < value) {
+        counter.innerText = Math.ceil(data + time);
+        setTimeout(animate, 20);
+      } else {
+        counter.innerText = value.toLocaleString('en-US');
+      }
+    };
+
+    const observer = new IntersectionObserver(entries => {
+      if (entries[0].isIntersecting) animate();
+    }, { threshold: 1 });
+
+    observer.observe(counter);
+  });

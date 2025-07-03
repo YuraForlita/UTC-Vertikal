@@ -70,22 +70,6 @@ section {
   padding: 10rem 8% 10rem;
 }
 
-.home {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 15rem;
-}
-
-.home-content {
-  display: flex;
-  flex-direction: column;
-  align-items: baseline;
-  text-align: left;
-  justify-content: center;
-  margin-top: 3rem;
-}
-
 span {
   color: var(--main-color);
 }
@@ -93,7 +77,6 @@ span {
 .logo span {
   color: var(--main-color);
 }
-
 /* Гамбургер */
 .hamburger {
   display: none;
@@ -183,26 +166,196 @@ span {
     align-items: center;
   }
 }
+.about {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    padding: 18rem 5%;
+    max-width: 1500px;
+    margin: 0 auto;
+  }
 
-.home-content h3 {
-  margin-bottom: 2rem;
-  margin-top: 1rem;
-  font-size: 3.5rem;
-}
+  .about-header h2 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+  }
 
-.home-content h1 {
-  font-size: 7rem;
-  font-weight: 700;
-  margin-top: 1.5rem;
-  line-height: 1;
-}
+  .about-intro {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 6rem;
+  }
 
-.home-content p {
-  font-size: 1.5rem;
-  font-weight: 500;
-  line-height: 1.8;
-  max-width: 1000px;
-}
+  .about-text h3 {
+    font-size: 2.4rem;
+  }
+
+  .highlight {
+    color: var(--main-color);
+  }
+
+  .about-buttons {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+
+  .about-btn {
+    background: transparent;
+    border: 2px solid var(--main-color);
+    padding: 1.2rem 2.4rem;
+    border-radius: 3rem;
+    color: var(--main-color);
+    font-weight: 600;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-size: 1.6rem;
+  }
+
+  .about-btn:hover {
+    background-color: var(--main-color);
+    color: black;
+  }
+
+  .about-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    margin-bottom: 6rem;
+  }
+
+  .about-main-image img {
+    width: 100%;
+    border-radius: 1.5rem;
+  }
+
+  .about-main-text h3 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    color: var(--main-color);
+  }
+
+  .about-main-text p {
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+  }
+
+  .about-stats {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+
+  .stat-box {
+    background: #131313;
+    padding: 2rem;
+    border-radius: 1rem;
+    text-align: center;
+    min-width: 150px;
+    flex: 1;
+  }
+
+  .stat-number,
+  .counter {
+    font-size: 2.8rem;
+    color: var(--main-color);
+    font-weight: 700;
+  }
+
+  .stat-box p {
+    font-size: 1.3rem;
+    margin-top: 0.5rem;
+  }
+
+  .about-banner {
+    background: linear-gradient(to right, #00ffee44, #001111);
+    padding: 5rem;
+    text-align: center;
+    border-radius: 2rem;
+    margin-bottom: 6rem;
+  }
+
+  .about-banner h2 {
+    font-size: 2.5rem;
+    color: white;
+  }
+
+  .about-extra {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+    align-items: center;
+  }
+
+  .about-extra-image img {
+    width: 100%;
+    max-width: 550px;
+    border-radius: 1.5rem;
+  }
+
+  .about-extra-text h3 {
+    font-size: 3rem;
+    color: var(--main-color);
+    margin-bottom: 1rem;
+  }
+
+  .about-extra-text p {
+    font-size: 1.7rem;
+    margin-bottom: 2rem;
+    max-width: 600px;
+  }
+
+  .about-extra-text .btn {
+    background: black;
+    border: 2px solid var(--main-color);
+    color: var(--main-color);
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    transition: 0.3s;
+    font-weight: 600;
+  }
+
+  .about-extra-text .btn:hover {
+    background: var(--main-color);
+    color: black;
+  }
+
+  @media (max-width: 991px) {
+    .about-main {
+      grid-template-columns: 1fr;
+    }
+    .about-intro {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .about-buttons {
+      justify-content: flex-start;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .about-header h2,
+    .about-banner h2,
+    .about-main-text h3,
+    .about-extra-text h3 {
+      font-size: 2.2rem;
+    }
+    .about-text h3 {
+      font-size: 1.8rem;
+    }
+    .about-btn {
+      font-size: 1.4rem;
+      padding: 0.8rem 1.6rem;
+    }
+    .stat-box {
+      flex: 1 1 100%;
+    }
+  }
 
 .btn {
   background-color: black;
@@ -236,96 +389,6 @@ span {
   box-shadow: 0 0 25px var(--main-color);
   background-color: var(--main-color);
   color: black;
-}
-
-.text-animation {
-  font-size: 34px;
-  font-weight: 600;
-  min-width: 280px;
-}
-
-.text-animation span {
-  position: relative;
-}
-
-.text-animation span::before {
-  content: 'Yura Fotlita BOSS';
-  color: var(--main-color);
-  animation: words 20s infinite;
-}
-
-.text-animation span::after {
-  content: "";
-  background-color: var(--bg-color);
-  position: absolute;
-  width: calc(100% + 80px);
-  height: 100%;
-  border-left: 3px solid var(--bg-color);
-  right: -8px;
-  animation: cursor 0.6s infinite, typing 20s steps(14) infinite;
-}
-
-@keyframes cursor {
-  to {
-    border-left: 2px solid var(--main-color);
-  }
-}
-
-@keyframes words {
-
-  0%,
-  20% {
-    content: 'побутової техніки';
-  }
-
-  21%,
-  40% {
-    content: 'електроніки';
-  }
-
-  41%,
-  60% {
-    content: 'бананів';
-  }
-
-  61%,
-  80% {
-    content: 'жартую, не бананів';
-  }
-/*
-  81%,
-  100% {
-    content: '';
-  }
-*/    
-}
-
-@keyframes typing {
-
-  10%,
-  15%,
-  30%,
-  35%,
-  50%,
-  55%,
-  70%,
-  75%,
-  90%,
-  95% {
-    width: 0;
-  }
-
-  5%,
-  20%,
-  25%,
-  40%,
-  45%,
-  60%,
-  65%,
-  80%,
-  85% {
-    width: calc(100% + 8px);
-  }
 }
 
 .lang-switcher {
