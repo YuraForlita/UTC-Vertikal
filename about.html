@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="uk">
 <head>
   <meta charset="UTF-8">
@@ -13,76 +14,84 @@
 <body>
   <div class="container">
     <header class="header">
-      <a href="index.html" class="logo">UTC <span>VERTIKAL</span></a>
-      <div class="hamburger" onclick="toggleMenu()">
-        <i class="fas fa-bars"></i>
-      </div>
-      <nav class="navbar">
-        <a href="index.html" data-i18n="nav.home">Головна</a>
-        <a href="about.html" data-i18n="nav.about">Про нас</a>
-        <a href="brands.html" data-i18n="nav.brands">Бренди</a>
-        <a href="contacts.html" data-i18n="nav.contacts">Контакти</a>
-      </nav>
-    </header>
+  <div class="header-left">
+    <a href="index.html" class="logo">UTC <span>VERTIKAL</span></a>
+    <div class="lang-dropdown">
+      <button class="lang-toggle">
+        UA <i class="fas fa-chevron-down"></i>
+      </button>
+      <ul class="lang-menu">
+        <li onclick="setLanguage('ua')">UA</li>
+        <li onclick="setLanguage('en')">EN</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="hamburger" onclick="toggleMenu()">
+    <i class="fas fa-bars"></i>
+  </div>
+  
+  <nav class="navbar">
+    <a href="index.html" data-i18n="nav.home">Головна</a>
+    <a href="about.html" data-i18n="nav.about">Про нас</a>
+    <a href="brands.html" data-i18n="nav.brands">Бренди</a>
+    <a href="contacts.html" data-i18n="nav.contacts">Контакти</a>
+  </nav>
+</header>
 
     <section class="about" id="about">
-  <div class="about-header">
-    <h2>Про нас</h2>
-    <div class="about-intro">
-      <div class="about-text">
-        <h3><span class="highlight">Наша місія</span> – якісна побутова техніка у кожному будинку</h3>
-      </div>
-      <div class="about-buttons">
-        <a href="#brands" class="about-btn"><i class="fas fa-star"></i> Наші бренди</a>
-        <a href="#partners" class="about-btn"><i class="fas fa-handshake"></i> Стати партнером</a>
-      </div>
-    </div>
-  </div>
-
-  <div class="about-main">
-    <div class="about-main-image">
-      <img src="https://vr-group.com.ua/wp-content/uploads/2021/01/07.jpg" alt="Офіс компанії">
-    </div>
-    <div class="about-main-text">
-      <h3>UTC VERTIKAL — офіційний представник світових брендів</h3>
-      <p>Ми — український бренд із понад 14 роками успішної роботи. Наша команда гарантує високоякісне обслуговування, оперативну доставку та довготривалу співпрацю. Співпрацюємо з провідними виробниками: Samsung, Sony, Whirlpool, Miele, Braun та іншими.</p>
-      <div class="about-stats">
-        <div class="stat-box">
-          <span class="stat-number">14+</span>
-          <p>років досвіду</p>
+        <div class="about-header">
+            <h2>Про нас</h2>
+            <div class="about-intro">
+            <div class="about-text">
+                <h3><span class="highlight">Наша місія</span> – якісна побутова техніка у кожному будинку</h3>
+            </div>
+            <div class="about-buttons">
+                <a href="#brands" class="about-btn"><i class="fas fa-star"></i> Наші бренди</a>
+                <a href="#partners" class="about-btn"><i class="fas fa-handshake"></i> Стати партнером</a>
+            </div>
+            </div>
         </div>
-        <div class="stat-box">
-          <span class="counter" data-target="500000">0</span>
-          <p>лояльних покупців</p>
+
+        <div class="about-main">
+            <div class="about-main-image">
+            <img src="https://vr-group.com.ua/wp-content/uploads/2021/01/07.jpg" alt="Офіс компанії">
+            </div>
+            <div class="about-main-text">
+            <h3>UTC VERTIKAL — офіційний представник світових брендів</h3>
+            <p>Ми — український бренд із понад 14 роками успішної роботи. Наша команда гарантує високоякісне обслуговування, оперативну доставку та довготривалу співпрацю. Співпрацюємо з провідними виробниками: Samsung, Sony, Whirlpool, Miele, Braun та іншими.</p>
+            <div class="about-stats">
+                <div class="stat-box">
+                <span class="stat-number">14+</span>
+                <p>років досвіду</p>
+                </div>
+                <div class="stat-box">
+                <span class="counter" data-target="500000">0</span>
+                <p>лояльних покупців</p>
+                </div>
+                <div class="stat-box">
+                <span class="stat-number">1000+</span>
+                <p>оптових клієнтів</p>
+                </div>
+            </div>
+            </div>
         </div>
-        <div class="stat-box">
-          <span class="stat-number">1000+</span>
-          <p>оптових клієнтів</p>
+
+        <div class="about-banner">
+            <h2>Працюємо по всій Україні — надаємо сервіс на рівні європейських стандартів</h2>
         </div>
-      </div>
-    </div>
-  </div>
 
-  <div class="about-banner">
-    <h2>Працюємо по всій Україні — надаємо сервіс на рівні європейських стандартів</h2>
-  </div>
-
-  <div class="about-extra">
-    <div class="about-extra-text">
-      <h3>Команда, яка робить неможливе — реальністю</h3>
-      <p>Компанія «Vertikal» міцно утримує статус надійного лідера на ринку оптових поставок електроніки та побутової техніки. Наша команда висококваліфікованих фахівців у сфері продажів, маркетингу та підтримки клієнтів забезпечує довіру понад 1200 партнерів по всій країні. Постійне вдосконалення сервісу та розширення асортименту дозволяє нам залишатися на крок попереду конкурентів і створювати стабільний прибуток для наших клієнтів. Ми прагнемо до розвитку партнерських відносин і забезпечення найкращих умов для бізнесу, щоб кожен покупець отримував максимальний комфорт і якість.</p>
-      <a href="#contact" class="btn">Зв'язатися з нами</a>
-    </div>
-    <div class="about-extra-image">
-      <img src="https://s.mind.ua/img/forall/a/202331/40.jpg?1636719056" alt="Наша команда">
-    </div>
-  </div>
-</section>
-
-    <div class="lang-switcher">
-      <button onclick="setLanguage('ua')">UA</button>
-      <button onclick="setLanguage('en')">EN</button>
-    </div>
+        <div class="about-extra">
+            <div class="about-extra-text">
+            <h3>Команда, яка робить неможливе — реальністю</h3>
+            <p>Компанія «Vertikal» міцно утримує статус надійного лідера на ринку оптових поставок електроніки та побутової техніки. Наша команда висококваліфікованих фахівців у сфері продажів, маркетингу та підтримки клієнтів забезпечує довіру понад 1200 партнерів по всій країні. Постійне вдосконалення сервісу та розширення асортименту дозволяє нам залишатися на крок попереду конкурентів і створювати стабільний прибуток для наших клієнтів. Ми прагнемо до розвитку партнерських відносин і забезпечення найкращих умов для бізнесу, щоб кожен покупець отримував максимальний комфорт і якість.</p>
+            <a href="#contact" class="btn">Зв'язатися з нами</a>
+            </div>
+            <div class="about-extra-image">
+            <img src="https://s.mind.ua/img/forall/a/202331/40.jpg?1636719056" alt="Наша команда">
+            </div>
+        </div>
+    </section>
   </div>
 
   <footer class="footer">
@@ -107,6 +116,10 @@
     function toggleMenu() {
       document.querySelector('.navbar').classList.toggle('active');
     }
+
+    document.querySelector('.lang-toggle').addEventListener('click', function() {
+      document.querySelector('.lang-menu').classList.toggle('active');
+    });
   </script>
   <script src="script.js"></script>
 </body>
