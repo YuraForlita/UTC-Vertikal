@@ -1,14 +1,11 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Купуйте побутову техніку, телевізори, гаджети та електроніку для дому в інтернет-магазині Nowe. Зручний пошук, швидке оформлення замовлення та доставка по Україні.">
-  <meta name="keywords" content="техніка для кухні, техніка для дому, телевізори та мультимедіа, смарт-годинники та гаджети, краса і здоровʼя">
-  <meta name="author" content="vertikal">
-  <meta name="robots" content="index, follow">
-  <title>UTC Vertikal</title>
-  <link rel="stylesheet" href="contacts.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Контакти | UTC Vertikal</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="contacts.css" />
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -26,11 +23,9 @@
           </ul>
         </div>
       </div>
-
       <div class="hamburger" onclick="toggleMenu()">
         <i class="fas fa-bars"></i>
       </div>
-
       <nav class="navbar" id="navbar">
         <a href="index.html" data-i18n="nav.home">Головна</a>
         <a href="about.html" data-i18n="nav.about">Про нас</a>
@@ -38,9 +33,30 @@
         <a href="contacts.html" data-i18n="nav.contacts">Контакти</a>
       </nav>
     </header>
+    <section class="contact-section">
+  <div class="contact-details">
+    <h2 data-i18n="contacts.title">Наші контакти</h2>
+    <p><i class="fas fa-phone"></i> +38 (050) 123-45-67</p>
+    <p><i class="fas fa-map-marker-alt"></i> м. Київ, Україна</p>
+    <p><i class="fas fa-envelope"></i> info@utc-vertikal.ua</p>
+    <p><i class="fas fa-clock"></i> Пн-Пт: 9:00–18:00</p>
+    <form action="https://formspree.io/f/mblybnzl" method="POST">
+      <label for="name">Імʼя</label>
+      <input type="text" id="name" name="name" required>
 
-    <section class="home" id="home">
-    </section>
+      <label for="email">Електронна пошта</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Повідомлення</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit" class="btn">Надіслати</button>
+    </form>
+  </div>
+  <div class="contact-map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1284.060036105899!2d23.56820228663647!3d49.934088223086455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473b3d65f17860ad%3A0xc552557a58c6bf4b!2z0KLQpiDQr9C90YLQsNGA!5e0!3m2!1suk!2sua!4v1751640536577!5m2!1suk!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+</section>
   </div>
 
   <footer class="footer">
@@ -60,7 +76,9 @@
       </div>
     </div>
   </footer>
+
   <script src="script.js"></script>
   <script src="translations.js"></script>
 </body>
 </html>
+
