@@ -89,3 +89,24 @@ const counters = document.querySelectorAll('.counter');
 
     observer.observe(counter);
   });
+
+//перемикач мови
+function toggleMenu() {
+      const navbar = document.getElementById('navbar');
+      navbar.classList.toggle('active');
+    }
+
+    document.getElementById('lang-toggle-btn').addEventListener('click', function() {
+      document.getElementById('lang-menu').classList.toggle('active');
+    });
+
+    function changeLang(lang) {
+      document.getElementById('current-lang').innerText = lang;
+      document.getElementById('lang-menu').classList.remove('active');
+    }
+
+    document.addEventListener('click', function(e) {
+      if (!e.target.closest('.lang-dropdown')) {
+        document.getElementById('lang-menu').classList.remove('active');
+      }
+    });  
