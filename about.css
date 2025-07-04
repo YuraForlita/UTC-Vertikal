@@ -326,6 +326,9 @@ span {
     .about-main {
       grid-template-columns: 1fr;
     }
+    .about-extra {
+      grid-template-columns: 1fr;
+    }
     .about-intro {
       flex-direction: column;
       align-items: flex-start;
