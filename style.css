@@ -172,6 +172,7 @@ span {
     width: 100%;
     padding: 2rem 0;
     background: #111;
+    border: 1px solid var(--main-color);
   }
 
   .navbar.active {
@@ -391,7 +392,7 @@ span {
     flex-direction: column;
     align-items: flex-start;
     background-color: var(--bg-color);
-    border: 1px solid var(--main-color);
+    
     position: absolute;
     top: 100%;
     right: 0;
