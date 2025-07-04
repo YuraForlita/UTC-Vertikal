@@ -92,21 +92,34 @@ const counters = document.querySelectorAll('.counter');
 
 //перемикач мови
 function toggleMenu() {
-      const navbar = document.getElementById('navbar');
-      navbar.classList.toggle('active');
+    const navbar = document.getElementById('navbar');
+    const langDropdown = document.querySelector('.lang-dropdown');
+    navbar.classList.toggle('active');
+
+    // Блокуємо перемикач мови, якщо меню відкрите
+    if (navbar.classList.contains('active')) {
+      langDropdown.classList.add('disabled');
+    } else {
+      langDropdown.classList.remove('disabled');
     }
+  }
 
-    document.getElementById('lang-toggle-btn').addEventListener('click', function() {
-      document.getElementById('lang-menu').classList.toggle('active');
-    });
+  // Показати/сховати меню мов
+  document.getElementById('lang-toggle-btn').addEventListener('click', function (e) {
+    e.stopPropagation(); // щоб не закривалося одразу
+    document.getElementById('lang-menu').classList.toggle('active');
+  });
 
-    function changeLang(lang) {
-      document.getElementById('current-lang').innerText = lang;
+  // Зміна мови
+  function changeLang(lang) {
+    document.getElementById('current-lang').innerText = lang;
+    document.getElementById('lang-menu').classList.remove('active');
+    // тут можеш викликати setLanguage(lang.toLowerCase()) якщо потрібно
+  }
+
+  // Закриває меню мови при кліку поза межами
+  document.addEventListener('click', function (e) {
+    if (!e.target.closest('.lang-dropdown')) {
       document.getElementById('lang-menu').classList.remove('active');
     }
-
-    document.addEventListener('click', function(e) {
-      if (!e.target.closest('.lang-dropdown')) {
-        document.getElementById('lang-menu').classList.remove('active');
-      }
-    });  
+  }); 
