@@ -161,17 +161,6 @@ span {
   .navbar.active {
     display: flex;
   }
-
-  .home {
-    flex-direction: column;
-    gap: 4rem;
-    padding-top: 15rem;
-    text-align: center;
-  }
-
-  .home-content {
-    align-items: center;
-  }
 }
 .about {
     background-color: var(--bg-color);
