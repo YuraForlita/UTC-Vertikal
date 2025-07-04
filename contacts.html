@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Купуйте побутову техніку, телевізори, гаджети та електроніку для дому в інтернет-магазині Nowe. Зручний пошук, швидке оформлення замовлення та доставка по Україні.">
+  <meta name="keywords" content="техніка для кухні, техніка для дому, телевізори та мультимедіа, смарт-годинники та гаджети, краса і здоровʼя">
+  <meta name="author" content="vertikal">
+  <meta name="robots" content="index, follow">
+  <title>UTC Vertikal</title>
+  <link rel="stylesheet" href="contacts.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="header-left">
+        <a href="index.html" class="logo">UTC <span>VERTIKAL</span></a>
+        <div class="lang-dropdown">
+          <button class="lang-toggle" id="lang-toggle-btn">
+            <span id="current-lang">UA</span> <i class="fas fa-chevron-down"></i>
+          </button>
+          <ul class="lang-menu" id="lang-menu">
+            <li onclick="changeLang('UA')">UA</li>
+            <li onclick="changeLang('EN')">EN</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="hamburger" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+      </div>
+
+      <nav class="navbar" id="navbar">
+        <a href="index.html" data-i18n="nav.home">Головна</a>
+        <a href="about.html" data-i18n="nav.about">Про нас</a>
+        <a href="brands.html" data-i18n="nav.brands">Бренди</a>
+        <a href="contacts.html" data-i18n="nav.contacts">Контакти</a>
+      </nav>
+    </header>
+
+    <section class="home" id="home">
+    </section>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <a href="index.html" class="logo">UTC <span>VERTIKAL</span></a>
+      <nav class="footer-nav">
+        <a href="index.html">Головна</a>
+        <a href="about.html">Про нас</a>
+        <a href="brands.html">Бренди</a>
+        <a href="contacts.html">Контакти</a>
+      </nav>
+      <div class="footer-info">
+        <p><i class="fas fa-phone"></i> +38 (050) 123-45-67</p>
+        <p><i class="fas fa-map-marker-alt"></i> м. Київ, Україна</p>
+        <p><i class="fas fa-envelope"></i> info@utc-vertikal.ua</p>
+        <p><i class="fas fa-clock"></i> Пн-Пт: 9:00–18:00</p>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+  <script src="translations.js"></script>
+</body>
+</html>
