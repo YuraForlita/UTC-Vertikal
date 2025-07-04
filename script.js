@@ -98,3 +98,22 @@ function toggleMenu() {
   setLanguage(savedLang);
   document.getElementById('current-lang').innerText = savedLang.toUpperCase(); // <- ось це додаємо
 });
+
+  document.body.classList.add('fade-in');
+
+  // При натисканні на посилання — затухання перед переходом
+  document.querySelectorAll('a[href]').forEach(link => {
+    const href = link.getAttribute('href');
+    const isExternal = href.startsWith('http') || href.startsWith('mailto:') || href.startsWith('#');
+    if (!isExternal) {
+      link.classList.add('page-link');
+      link.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.body.style.transition = 'opacity 0.4s ease';
+        document.body.style.opacity = '0';
+        setTimeout(() => {
+          window.location.href = href;
+        }, 400);
+      });
+    }
+  });
