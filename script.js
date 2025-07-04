@@ -112,9 +112,10 @@ function toggleMenu() {
 
   // Зміна мови
   function changeLang(lang) {
+    const lowerLang = lang.toLowerCase();
     document.getElementById('current-lang').innerText = lang;
     document.getElementById('lang-menu').classList.remove('active');
-    // тут можеш викликати setLanguage(lang.toLowerCase()) якщо потрібно
+    setLanguage(lowerLang); // <== ось це додаємо
   }
 
   // Закриває меню мови при кліку поза межами
