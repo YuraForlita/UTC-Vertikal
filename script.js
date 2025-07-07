@@ -1,20 +1,18 @@
 function setLanguage(lang) {
-    const elements = document.querySelectorAll("[data-i18n]");
+  const elements = document.querySelectorAll("[data-i18n]");
     elements.forEach(el => {
       const key = el.getAttribute("data-i18n");
-      const translation = translations[lang][key];
-      if (translation) el.innerHTML = translation;
-    });
-
-    // Зберегти обрану мову в localStorage
-    localStorage.setItem("lang", lang);
+      const translation = translations[lang]?.[key];
+        if (translation) el.innerHTML = translation;
+      });
+      localStorage.setItem("lang", lang);
   }
-
-  // Автоматичне застосування мови при завантаженні
   document.addEventListener("DOMContentLoaded", () => {
     const savedLang = localStorage.getItem("lang") || "ua";
     setLanguage(savedLang);
-  });
+    document.getElementById('current-lang').innerText = savedLang.toUpperCase();
+    startTyping(savedLang);
+  });    
 
 
   const texts = {
@@ -22,44 +20,38 @@ function setLanguage(lang) {
   en: ['home appliances', 'electronics', 'bananas', 'joke, not bananas']
 };
 
-function startTyping(lang) {
-  const el = document.getElementById("animated-text");
-  const words = texts[lang];
-  let i = 0;
+let typingIndex = 0;
+    let charIndex = 0;
+    let currentText = '';
+    let isDeleting = false;
+    let typingTimer;
 
-  setInterval(() => {
-    el.textContent = words[i];
-    i = (i + 1) % words.length;
-  }, 2000);
-}
+    function startTyping(lang) {
+      const el = document.getElementById("animated-text");
+      const words = texts[lang];
+      if (!el || !words) return;
+      clearTimeout(typingTimer);
 
-document.addEventListener("DOMContentLoaded", () => {
-  const lang = localStorage.getItem("lang") || "ua";
-  startTyping(lang);
-});
-
-const counters = document.querySelectorAll('.counter');
-  const speed = 300;
-
-  counters.forEach(counter => {
-    const animate = () => {
-      const value = +counter.getAttribute('data-target');
-      const data = +counter.innerText;
-      const time = value / speed;
-      if (data < value) {
-        counter.innerText = Math.ceil(data + time);
-        setTimeout(animate, 20);
-      } else {
-        counter.innerText = value.toLocaleString('en-US');
+      function type() {
+        currentText = words[typingIndex];
+        if (isDeleting) {
+          el.textContent = currentText.substring(0, charIndex--);
+        } else {
+          el.textContent = currentText.substring(0, charIndex++);
+        }
+        if (!isDeleting && charIndex === currentText.length + 1) {
+          isDeleting = true;
+          typingTimer = setTimeout(type, 1000);
+        } else if (isDeleting && charIndex === 0) {
+          isDeleting = false;
+          typingIndex = (typingIndex + 1) % words.length;
+          typingTimer = setTimeout(type, 300);
+        } else {
+          typingTimer = setTimeout(type, isDeleting ? 50 : 100);
+        }
       }
-    };
-
-    const observer = new IntersectionObserver(entries => {
-      if (entries[0].isIntersecting) animate();
-    }, { threshold: 1 });
-
-    observer.observe(counter);
-  });
+      type();
+    }
 
 //перемикач мови
 function toggleMenu() {
@@ -85,6 +77,7 @@ function toggleMenu() {
     document.getElementById('current-lang').innerText = lang;
     document.getElementById('lang-menu').classList.remove('active');
     setLanguage(lowerLang); 
+    startTyping(lowerLang);
   }
 
   document.addEventListener('click', function (e) {
