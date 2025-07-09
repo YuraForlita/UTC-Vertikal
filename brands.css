@@ -29,8 +29,12 @@ body {
   user-select: none;
 }
 
-.allow-select {
+p.allow-select,
+span.allow-select,
+div.allow-select,
+a.allow-select {
   user-select: text !important;
+  -webkit-user-select: text !important;
   color: inherit !important;
 }
 
