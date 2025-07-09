@@ -29,6 +29,11 @@ body {
   user-select: none;
 }
 
+.allow-select {
+  user-select: text !important;
+  color: inherit !important;
+}
+
 .header {
   width: 100%;
   position: fixed;
