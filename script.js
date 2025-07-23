@@ -1,4 +1,14 @@
-particlesJS("particles-js", {
+function setLanguage(lang) {
+  const elements = document.querySelectorAll("[data-i18n]");
+    elements.forEach(el => {
+      const key = el.getAttribute("data-i18n");
+      const translation = translations[lang]?.[key];
+        if (translation) el.innerHTML = translation;
+      });
+      localStorage.setItem("lang", lang);
+  }
+  document.addEventListener("DOMContentLoaded", () => {
+    particlesJS("particles-js", {
   particles: {
     number: {
       value: 80,
@@ -49,7 +59,7 @@ particlesJS("particles-js", {
     },
     move: {
       enable: true,
-      speed: 2,
+      speed: 1,
       direction: "none",
       random: false,
       straight: false,
@@ -112,17 +122,6 @@ particlesJS("particles-js", {
     background_size: "cover"
   }
 });
-
-function setLanguage(lang) {
-  const elements = document.querySelectorAll("[data-i18n]");
-    elements.forEach(el => {
-      const key = el.getAttribute("data-i18n");
-      const translation = translations[lang]?.[key];
-        if (translation) el.innerHTML = translation;
-      });
-      localStorage.setItem("lang", lang);
-  }
-  document.addEventListener("DOMContentLoaded", () => {
     const savedLang = localStorage.getItem("lang") || "ua";
     setLanguage(savedLang);
     document.getElementById('current-lang').innerText = savedLang.toUpperCase();
