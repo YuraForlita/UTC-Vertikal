@@ -9,7 +9,7 @@
 }
 
 :root {
-  --bg-color: transparent;
+  --bg-color: #080808;
   --second-bg-color: #131313;
   --text-color: white;
   --main-color: #00ffee;
@@ -188,7 +188,7 @@ span {
   }
 }
 .about {
-    background-color: var(--bg-color);
+    background-color: transparent;
     color: var(--text-color);
 
     max-width: 1700px;
