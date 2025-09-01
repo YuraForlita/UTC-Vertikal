@@ -306,6 +306,19 @@ span {
     color: white;
   }
 
+  .about-extra-01 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    margin-bottom: 6rem;
+  }
+
+  .about-extra-image-01 img {
+    width: 100%;
+
+    border-radius: 1.5rem;
+  }
   .about-extra {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -381,6 +394,44 @@ span {
       flex: 1 1 100%;
     }
   }
+
+/***************************************/
+.about-triple {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+  margin-bottom: 6rem;
+}
+
+.about-triple-image img {
+  width: 100%;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.about-triple-text h3 {
+  font-size: 3rem;
+    color: var(--main-color);
+    margin-bottom: 1rem;
+}
+
+.about-triple-text p {
+  font-size: 1.7rem;
+  margin-bottom: 2rem;
+}
+
+/* Адаптив */
+@media (max-width: 991px) {
+  .about-triple {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .about-triple-text {
+    margin-bottom: 2rem;
+  }
+}
+
 /**************************************/
 .btn {
   background-color: black;
