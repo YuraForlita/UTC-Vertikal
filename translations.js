@@ -8,7 +8,7 @@ const translations = {
         "home.subtitle.static": "Ми є дистриб'ютор",
         "home.description": "Ми займаємось дистрибуцією побутової техніки, електроніки, бананів і може ще чогось.",
         "home.more": "Детальніше про нас",
-        "contacts.address": "м. Київ, Україна",
+        "contacts.address": "м. Новояворівськ, Україна",
         "contacts.hours": "Пн-Пт: 9:00–18:00"
       },
       en: {
@@ -20,7 +20,7 @@ const translations = {
         "home.subtitle.static": "We are a distributor of",
         "home.description": "We distribute household appliances, electronics, bananas and maybe something else.",
         "home.more": "More about us",
-        "contacts.address": "Kyiv, Ukraine",
+        "contacts.address": "Novoyavorivsk, Ukraine",
         "contacts.hours": "Mon–Fri: 9:00–18:00"
       }
     };

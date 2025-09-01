@@ -10,7 +10,10 @@ const translations = {
     "form.message": "Повідомлення",
     "form.submit": "Надіслати",
     "about.contactBtn": "Зв'язатися з нами",
-    "contacts.address": "м. Київ, Україна",
+    "contacts.address_1": "81054",
+    "contacts.address_2": "Львівська область",
+    "contacts.address_3": "м. Новояворівськ",
+    "contacts.address_4": "вул. Вербицького 16",
     "contacts.hours": "Пн-Пт: 9:00–18:00"
   },
   en: {
@@ -24,7 +27,10 @@ const translations = {
     "form.message": "Message",
     "form.submit": "Send",
     "about.contactBtn": "Contact Us",
-    "contacts.address": "Kyiv, Ukraine",
+    "contacts.address_1": "81054",
+    "contacts.address_2": "Lviv region",
+    "contacts.address_3": "м. Новояворівськ",
+    "contacts.address_4": "16 Verbytskoho St.",
     "contacts.hours": "Mon–Fri: 9:00–18:00"
   }
 };
