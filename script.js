@@ -130,8 +130,8 @@ function setLanguage(lang) {
 
 
   const texts = {
-  ua: ['побутової техніки', 'електроніки', 'бананів', 'жартую, не бананів'],
-  en: ['home appliances', 'electronics', 'bananas', 'joke, not bananas']
+  ua: ['побутової техніки', 'електроніки', 'гаджетів'],
+  en: ['home appliances', 'electronics', 'gadgets']
 };
 
 let typingIndex = 0;

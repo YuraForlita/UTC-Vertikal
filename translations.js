@@ -6,7 +6,7 @@ const translations = {
         "nav.contacts": "Контакти",
         "home.greeting": "Привіт , це UTC <span>VERTIKAL</span>",
         "home.subtitle.static": "Ми є дистриб'ютор",
-        "home.description": "Ми займаємось дистрибуцією побутової техніки, електроніки, бананів і може ще чогось.",
+        "home.description": "Ми займаємось дистрибуцією побутової техніки, електроніки, гаджетів і може ще чогось.",
         "home.more": "Детальніше про нас",
         "contacts.address": "м. Новояворівськ, Україна",
       },
@@ -17,7 +17,7 @@ const translations = {
         "nav.contacts": "Contacts",
         "home.greeting": "Hello, this is UTC <span>VERTIKAL</span>",
         "home.subtitle.static": "We are a distributor of",
-        "home.description": "We distribute household appliances, electronics, bananas and maybe something else.",
+        "home.description": "We distribute household appliances, electronics, gadgets and maybe something else.",
         "home.more": "More about us",
         "contacts.address": "Novoyavorivsk, Ukraine",
       }
