@@ -9,7 +9,6 @@ const translations = {
         "home.description": "Ми займаємось дистрибуцією побутової техніки, електроніки, бананів і може ще чогось.",
         "home.more": "Детальніше про нас",
         "contacts.address": "м. Новояворівськ, Україна",
-        "contacts.hours": "Пн-Пт: 9:00–18:00"
       },
       en: {
         "nav.home": "Home",
@@ -21,6 +20,5 @@ const translations = {
         "home.description": "We distribute household appliances, electronics, bananas and maybe something else.",
         "home.more": "More about us",
         "contacts.address": "Novoyavorivsk, Ukraine",
-        "contacts.hours": "Mon–Fri: 9:00–18:00"
       }
     };

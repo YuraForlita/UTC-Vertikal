@@ -412,8 +412,8 @@ span {
 
 .about-triple-text h3 {
   font-size: 3rem;
-    color: var(--main-color);
-    margin-bottom: 1rem;
+  color: var(--main-color);
+  margin-bottom: 1rem;
 }
 
 .about-triple-text p {
@@ -431,7 +431,46 @@ span {
     margin-bottom: 2rem;
   }
 }
+/*****************************************/
+.about-center {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+  margin-bottom: 6rem;
+}
 
+.about-center-image img {
+  width: 100%;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.about-center-text {
+  text-align: center;
+}
+
+.about-center-text h3 {
+  font-size: 3rem;
+  color: var(--main-color);
+  margin-bottom: 1rem;
+}
+
+.about-center-text p {
+  font-size: 1.7rem;
+  margin-bottom: 2rem;
+}
+
+/* Адаптив */
+@media (max-width: 991px) {
+  .about-center {
+    grid-template-columns: 1fr;
+  }
+  .about-center-text {
+    order: -1;
+    margin-bottom: 2rem;
+  }
+}
 /**************************************/
 .btn {
   background-color: black;

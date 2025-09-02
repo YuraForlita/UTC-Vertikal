@@ -21,8 +21,7 @@ const translations = {
     "brands.gorenje.title": "Gorenje",
     "brands.gorenje.desc": "Gorenje d.d. — акціонерна холдингова компанія, великий виробник побутової техніки з головним офісом у Веленє, Словенія. Із часу свого заснування у 1950-х, Gorenje Group виросла з виробника сільськогосподарського обладнання в акціонерну холдингову компанію, яка об'єднує 47 підприємств, 33 з яких знаходяться поза межами Словенії. В червні 2018 року компанія Gorenje була поглинута китайською компанією Hisense, яка стала власником 95,42 % акцій Gorenje.",
     "about.contactBtn": "Зв'язатися з нами",
-    "contacts.address": "м. Київ, Україна",
-    "contacts.hours": "Пн-Пт: 9:00–18:00"
+    "contacts.address": "м. Новояворівськ, Україна",
   },
   en: {
     "nav.home": "Home",
@@ -46,7 +45,6 @@ const translations = {
     "brands.gorenje.title": "Gorenje",
     "brands.gorenje.desc": "Gorenje d.d. is a joint-stock holding company, a large manufacturer of household appliances with its headquarters in Velenje, Slovenia. Since its founding in the 1950s, the Gorenje Group has grown from a manufacturer of agricultural equipment to a joint-stock holding company, which unites 47 companies, 33 of which are located outside Slovenia. In June 2018, Gorenje was acquired by the Chinese company Hisense, which became the owner of 95.42% of Gorenje shares.",
     "about.contactBtn": "Contact Us",
-    "contacts.address": "Kyiv, Ukraine",
-    "contacts.hours": "Mon–Fri: 9:00–18:00"
+    "contacts.address": "Novoyavorivsk, Ukraine",
   }
 };
