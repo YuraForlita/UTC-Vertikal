@@ -4,22 +4,37 @@ const translations = {
     "nav.about": "Про нас",
     "nav.brands": "Бренди",
     "nav.contacts": "Контакти",
-    "brands.berghoff.title": "BergHOFF",
-    "brands.berghoff.desc": "Компанія BergHOFF WorldWide займається розробкою та виробництвом кухонного посуду та столового приладдя вже багато років. Ефективна співпраця команди дизайнерів, технічних фахівців і міжнародних партнерів дозволяє компанії BergHOFF пропонувати своїм покупцям дизайнерський продукт високої якості.",
-    "brands.bosch.title": "Bosch",
-    "brands.bosch.desc": "Bosch є одним з найбільших в Європі виробників продукції в таких галузях: машинобудування, автомобільні вузли та комплектуючі, виробництво інструментів, діагностичних та керуючих механізмів та пристроїв; будівельна та побутова техніка; теплова та солярна техніка; системи зв'язку та безпеки.",
-    "brands.braun.title": "Braun",
-    "brands.braun.desc": "Braun - німецька машинобудівна компанія, виробник споживчих та побутових електровиробів, таких як: електробритви, праски, електрочайники, прилади догляду за волоссям, прилади персональної діагностики і так далі.",
-    "brands.Сooper&Hunter.title": "Сooper&Hunter",
-    "brands.Сooper&Hunter.desc": "Історія кондиціонерів Сooper&Hunter (США), починається з об'єднання зусиль трьох великих промислових підприємств на базі C.S. Cooper Company — Hunter Manufacturing Company і Brunner Manufacturing Company. В результаті чого в 1916 році була створена компанія Cooper&Hunter International Corporation, напрямком якої є виробництво кондиціонерів Сooper&Hunter.",
-    "brands.delonghi.title": "DeLonghi",
-    "brands.delonghi.desc": "DeLonghi - італійська група компаній, один з найбільших світових виробників побутової техніки, заснований 1902 року в Італії. На світовому ринку відомий як виробник кліматичного обладнання та побутової техніки.",
-    "brands.dyson.title": "Dyson",
-    "brands.dyson.desc": "Dyson Limited, більш відома як Dyson — сінгапурська багатонаціональна технологічна компанія, заснована Джеймсом Дайсоном у 1991 року в Мальмсбері, Англія. Компанія розробляє та виробляє побутову техніку, таку як пилососи, повітряочисники, сушарки для рук, безлопатеві вентилятори, обігрівачі, фени та світильники.",
-    "brands.electrolux.title": "Electrolux",
-    "brands.electrolux.desc": "Електролюкс (швед. Electrolux) — шведський концерн, один з провідних світових інноваційних виробників широкого спектра електричних і газових приладів для домашніх і професійних потреб. Щорічно компанія продає понад 50 мільйонів своїх виробів споживачам зі 150 країн світу.",
-    "brands.gorenje.title": "Gorenje",
-    "brands.gorenje.desc": "Gorenje d.d. — акціонерна холдингова компанія, великий виробник побутової техніки з головним офісом у Веленє, Словенія. Із часу свого заснування у 1950-х, Gorenje Group виросла з виробника сільськогосподарського обладнання в акціонерну холдингову компанію, яка об'єднує 47 підприємств, 33 з яких знаходяться поза межами Словенії. В червні 2018 року компанія Gorenje була поглинута китайською компанією Hisense, яка стала власником 95,42 % акцій Gorenje.",
+
+    "brands.kenwood.title": "Kenwood",
+    "brands.kenwood.desc": "Британський бренд побутової техніки, який спеціалізується на виробництві кухонних комбайнів, блендерів, кавоварок та іншої техніки для приготування їжі. Kenwood відомий поєднанням класичного дизайну, високої якості та надійності, що зробило його популярним у багатьох країнах світу.",
+
+    "brands.kernau.title": "Kernau",
+    "brands.kernau.desc": "Польський виробник побутової техніки для кухні та дому. Компанія пропонує варильні поверхні, духові шафи, витяжки, посудомийні машини та іншу техніку, орієнтовану на функціональність та доступність. Kernau вирізняється сучасним дизайном і практичністю.",
+
+    "brands.gotie.title": "Gotie",
+    "brands.gotie.desc": "Європейський бренд, що пропонує побутову техніку та електроніку для кухні та дому. Асортимент Gotie включає блендери, соковижималки, кухонні ваги та інші прилади. Компанія робить акцент на поєднанні інновацій, естетики та доступної ціни.",
+
+    "brands.kitchenaid.title": "KitchenAid",
+    "brands.kitchenaid.desc": "Американський бренд із понад 100-річною історією, відомий у всьому світі своїми легендарними планетарними міксерами. KitchenAid виробляє також блендери, кавоварки, тостери та іншу техніку преміум-класу. Продукція бренду поєднує довговічність, професійний підхід та стильний дизайн.",
+
+    "brands.saeco.title": "Saeco",
+    "brands.saeco.desc": "Італійська компанія, яка спеціалізується на виробництві кавоварок і кавових автоматів. Saeco стала однією з перших, хто запропонував автоматичні кавомашини для дому. Бренд асоціюється з якістю, інноваціями та справжньою італійською кавовою культурою.",
+
+    "brands.philips.title": "Philips",
+    "brands.philips.desc": "Голландський багатопрофільний концерн, один із найбільших виробників електроніки у світі. Philips випускає побутову техніку, медичне обладнання, освітлювальні системи та електроніку для дому. Техніка Philips відома інноваційними технологіями, надійністю та зручністю у використанні.",
+
+    "brands.redmond.title": "Redmond",
+    "brands.redmond.desc": "Міжнародний бренд побутової техніки, що спеціалізується на сучасних рішеннях для дому та кухні. Найбільшу популярність отримали мультиварки Redmond, а також інша \"розумна\" техніка. Компанія орієнтується на інновації та комфорт користувачів.",
+
+    "brands.tefal.title": "Tefal",
+    "brands.tefal.desc": "Французький бренд, який став світовим лідером у сфері посуду з антипригарним покриттям. Крім кухонного начиння, компанія виробляє мультиварки, аерогрилі, праски, фритюрниці та іншу техніку для дому. Tefal відомий своїми інноваціями та практичністю.",
+
+    "brands.whirlpool.title": "Whirlpool",
+    "brands.whirlpool.desc": "Американська корпорація, один із найбільших у світі виробників побутової техніки. Whirlpool випускає пральні та посудомийні машини, холодильники, духові шафи, мікрохвильові печі та іншу техніку для дому. Продукція компанії поєднує інноваційність, енергоефективність і сучасний дизайн.",
+
+    "brands.zanussi.title": "Zanussi",
+    "brands.zanussi.desc": "Італійський бренд із більш ніж 100-річною історією, що спеціалізується на побутовій техніці для кухні та дому. Zanussi виробляє холодильники, плити, пральні машини та інші прилади, відомі своєю простотою у використанні, надійністю та стильним італійським дизайном.",
+
     "about.contactBtn": "Зв'язатися з нами",
     "contacts.address": "м. Новояворівськ, Україна",
   },
@@ -28,22 +43,37 @@ const translations = {
     "nav.about": "About Us",
     "nav.brands": "Brands",
     "nav.contacts": "Contacts",
-    "brands.berghoff.title": "BergHOFF",
-    "brands.berghoff.desc": "BergHOFF WorldWide has been developing and manufacturing kitchenware and cutlery for many years. The effective cooperation of a team of designers, technical specialists and international partners allows BergHOFF to offer its customers a high-quality designer product.",
-    "brands.bosch.title": "Bosch",
-    "brands.bosch.desc": "Bosch is one of Europe's largest manufacturers of products in the following industries: mechanical engineering, automotive components and parts, production of tools, diagnostic and control mechanisms and devices; construction and household appliances; heating and solar technology; communication and security systems.",
-    "brands.braun.title": "Braun",
-    "brands.braun.desc": "Braun is a German engineering company, a manufacturer of consumer and household electrical products, such as: electric shavers, irons, electric kettles, hair care devices, personal diagnostic devices, and so on.",
-    "brands.Сooper&Hunter.title": "Сooper&Hunter",
-    "brands.Сooper&Hunter.desc": "The history of Cooper&Hunter air conditioners (USA) begins with the merger of three large industrial enterprises based on the C.S. Cooper Company - Hunter Manufacturing Company and Brunner Manufacturing Company. As a result, in 1916, Cooper&Hunter International Corporation was established, the focus of which is the production of Cooper&Hunter air conditioners.",
-    "brands.delonghi.title": "DeLonghi",
-    "brands.delonghi.desc": "DeLonghi is an Italian group of companies, one of the world's largest manufacturers of home appliances, founded in 1902 in Italy. It is known on the world market as a manufacturer of air conditioning equipment and home appliances.",
-    "brands.dyson.title": "Dyson",
-    "brands.dyson.desc": "Dyson Limited, commonly known as Dyson, is a Singaporean multinational technology company founded by James Dyson in 1991 in Malmesbury, England. The company designs and manufactures household appliances such as vacuum cleaners, air purifiers, hand dryers, bladeless fans, heaters, hair dryers, and lamps.",
-    "brands.electrolux.title": "Electrolux",
-    "brands.electrolux.desc": "Electrolux (Swedish: Electrolux) is a Swedish concern, one of the world's leading innovative manufacturers of a wide range of electrical and gas appliances for home and professional needs. The company sells more than 50 million of its products annually to consumers in 150 countries around the world.",
-    "brands.gorenje.title": "Gorenje",
-    "brands.gorenje.desc": "Gorenje d.d. is a joint-stock holding company, a large manufacturer of household appliances with its headquarters in Velenje, Slovenia. Since its founding in the 1950s, the Gorenje Group has grown from a manufacturer of agricultural equipment to a joint-stock holding company, which unites 47 companies, 33 of which are located outside Slovenia. In June 2018, Gorenje was acquired by the Chinese company Hisense, which became the owner of 95.42% of Gorenje shares.",
+
+    "brands.kenwood.title": "Kenwood",
+    "brands.kenwood.desc": "A British brand of household appliances specializing in the production of kitchen machines, blenders, coffee makers, and other food preparation equipment. Kenwood is known for combining classic design, high quality, and reliability, which has made it popular in many countries around the world.",
+
+    "brands.kernau.title": "Kernau",
+    "brands.kernau.desc": "A Polish manufacturer of household appliances for the kitchen and home. The company offers hobs, ovens, hoods, dishwashers, and other appliances focused on functionality and affordability. Kernau stands out for its modern design and practicality.",
+
+    "brands.gotie.title": "Gotie",
+    "brands.gotie.desc": "A European brand offering household appliances and electronics for the kitchen and home. The Gotie range includes blenders, juicers, kitchen scales, and other devices. The company focuses on combining innovation, aesthetics, and affordable prices.",
+
+    "brands.kitchenaid.title": "KitchenAid",
+    "brands.kitchenaid.desc": "An American brand with more than 100 years of history, known worldwide for its legendary stand mixers. KitchenAid also produces blenders, coffee makers, toasters, and other premium-class appliances. The brand's products combine durability, a professional approach, and stylish design.",
+
+    "brands.saeco.title": "Saeco",
+    "brands.saeco.desc": "An Italian company specializing in the production of coffee machines and coffee makers. Saeco was one of the first to offer automatic coffee machines for home use. The brand is associated with quality, innovation, and true Italian coffee culture.",
+
+    "brands.philips.title": "Philips",
+    "brands.philips.desc": "A Dutch multinational conglomerate and one of the world's largest electronics manufacturers. Philips produces household appliances, medical equipment, lighting systems, and home electronics. Philips appliances are known for their innovative technologies, reliability, and user convenience.",
+
+    "brands.redmond.title": "Redmond",
+    "brands.redmond.desc": "An international brand of household appliances specializing in modern solutions for home and kitchen. Redmond is most famous for its multicookers as well as other smart appliances. The company focuses on innovation and user comfort.",
+
+    "brands.tefal.title": "Tefal",
+    "brands.tefal.desc": "A French brand that has become a global leader in non-stick cookware. In addition to kitchenware, the company manufactures multicookers, air fryers, irons, deep fryers, and other household appliances. Tefal is known for its innovations and practicality.",
+
+    "brands.whirlpool.title": "Whirlpool",
+    "brands.whirlpool.desc": "An American corporation and one of the largest household appliance manufacturers in the world. Whirlpool produces washing machines, dishwashers, refrigerators, ovens, microwave ovens, and other home appliances. The company's products combine innovation, energy efficiency, and modern design.",
+
+    "brands.zanussi.title": "Zanussi",
+    "brands.zanussi.desc": "An Italian brand with more than 100 years of history, specializing in household appliances for the kitchen and home. Zanussi produces refrigerators, stoves, washing machines, and other appliances known for their ease of use, reliability, and stylish Italian design.",
+
     "about.contactBtn": "Contact Us",
     "contacts.address": "Novoyavorivsk, Ukraine",
   }
