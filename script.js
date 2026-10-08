@@ -5,6 +5,7 @@ function setLanguage(lang) {
       const translation = translations[lang]?.[key];
         if (translation) el.innerHTML = translation;
       });
+      document.documentElement.lang = lang === "ua" ? "uk" : lang;
       localStorage.setItem("lang", lang);
   }
   document.addEventListener("DOMContentLoaded", () => {
@@ -145,6 +146,9 @@ let typingIndex = 0;
       const words = texts[lang];
       if (!el || !words) return;
       clearTimeout(typingTimer);
+      typingIndex = 0;
+      charIndex = 0;
+      isDeleting = false;
 
       function type() {
         currentText = words[typingIndex];
@@ -200,13 +204,12 @@ function toggleMenu() {
     }
   }); 
 
-  document.addEventListener("DOMContentLoaded", () => {
-  const savedLang = localStorage.getItem("lang") || "ua";
-  setLanguage(savedLang);
-  document.getElementById('current-lang').innerText = savedLang.toUpperCase(); // <- ось це додаємо
-});
-
   document.body.classList.add('fade-in');
+
+  // Повернення кнопкою «Назад» з кешу браузера — прибираємо затухання
+  window.addEventListener('pageshow', e => {
+    if (e.persisted) document.body.style.opacity = '';
+  });
 
   // При натисканні на посилання — затухання перед переходом
   document.querySelectorAll('a[href]').forEach(link => {
@@ -243,7 +246,10 @@ counters.forEach(counter => {
   };
 
   const observer = new IntersectionObserver(entries => {
-    if (entries[0].isIntersecting) updateCount();
+    if (entries[0].isIntersecting) {
+      observer.disconnect();
+      updateCount();
+    }
   }, { threshold: 1 });
 
   observer.observe(counter);
