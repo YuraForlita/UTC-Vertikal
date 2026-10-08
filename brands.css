@@ -422,3 +422,7 @@ a.page-link.fade-out {
   opacity: 0.3;
   pointer-events: none;
 }
+/* Текст адреси біля іконки — без акцентного кольору */
+span[data-i18n^="contacts.address"] {
+  color: inherit;
+}
