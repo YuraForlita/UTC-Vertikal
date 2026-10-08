@@ -10,10 +10,7 @@ const translations = {
     "form.message": "Повідомлення",
     "form.submit": "Надіслати",
     "about.contactBtn": "Зв'язатися з нами",
-    "contacts.address_1": "81054",
-    "contacts.address_2": "Львівська область",
-    "contacts.address_3": "м. Новояворівськ",
-    "contacts.address_4": "вул. Вербицького 16",
+    "contacts.address_full": "вул. Вербицького 16, м. Новояворівськ, Львівська обл., 81054",
     "contacts.address": "м. Новояворівськ, Україна",
   },
   en: {
@@ -27,10 +24,7 @@ const translations = {
     "form.message": "Message",
     "form.submit": "Send",
     "about.contactBtn": "Contact Us",
-    "contacts.address_1": "81054",
-    "contacts.address_2": "Lviv region",
-    "contacts.address_3": "Novoyavorivsk",
-    "contacts.address_4": "16 Verbytskoho St.",
+    "contacts.address_full": "16 Verbytskoho St., Novoyavorivsk, Lviv region, 81054",
     "contacts.address": "Novoyavorivsk, Ukraine",
     
   }
